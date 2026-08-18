@@ -1,5 +1,7 @@
 # Game of Life soup search farm
 
+Note: the code was written without LLMs, this description was not.
+
 Searching for the largest soup in Conway's Game of Life under a set of constraints, run as a
 distributed CPU job across rented spot instances.
 
