@@ -12,7 +12,7 @@ project; the later work is not part of the hackathon submission.
 
 | Path | |
 |---|---|
-| `src/` | The CPU search — `sa.cc` (simulated annealing), `soup.cc`, `concur.cc` (the concurrent search shipped in the container), `hashtable.cc`, and several generation/evaluation variants. This is what actually ran. |
+| `src/` | The CPU search — `sa.cc` (simulated annealing), `soup.cc`, `concur.cc` (the concurrent search shipped in the container), `hashtable.cc`, and generation/evaluation variants. This is what actually ran. |
 | `deploy/` | Dockerfile, entrypoint, and Kubernetes manifests. |
 | `cuda/` | An attempted GPU search path (`cup.cu`, 581 lines; `coup.cu`, an earlier version). It did not work out and was not used for the production runs. Kept because it's most of the code I wrote. |
 | `analysis/` | Python utilities for decoding, unflattening, rendering and summarising results. |
@@ -65,3 +65,6 @@ repository, and the collector's address is redacted to `COLLECTOR_HOST`.
   is the nearest surviving version.
 - The upstream projects this work sat alongside — `apgmera`, `apgcpu`, `lifelib` — are not mine
   and are not included.
+- One search variant in the original tree was written by a collaborator, along with my
+  modifications of it. Those files are excluded here so that everything in this repository is my
+  own work.
