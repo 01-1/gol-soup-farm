@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soup
+  namespace: default
+  labels:
+    k8s-app: soup
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: soup
+  template:
+    metadata:
+      name: soup
+      labels:
+        k8s-app: soup
+    spec:
+      containers:
+        - name: soup
+          image: vi01/soup
+          securityContext:
+            privileged: false

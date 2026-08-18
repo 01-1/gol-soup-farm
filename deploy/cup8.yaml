@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cup8
+  namespace: default
+  labels:
+    k8s-app: cup8
+spec:
+  replicas: 64
+  selector:
+    matchLabels:
+      k8s-app: cup8
+  template:
+    metadata:
+      name: cup8
+      labels:
+        k8s-app: cup8
+    spec:
+      containers:
+        - name: cup8
+          image: vi01/cup8
+          resources:
+            requests:
+              cpu: 7
+          securityContext:
+            privileged: false

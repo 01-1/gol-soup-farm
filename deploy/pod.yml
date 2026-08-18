@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soup2
+  namespace: vi
+  labels:
+    k8s-app: soup2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: soup2
+  template:
+    metadata:
+      name: soup2
+      labels:
+        k8s-app: soup2
+    spec:
+      containers:
+        - name: soup2
+          image: docker.io/vi01/soup
+          securityContext:
+            privileged: false
