@@ -1,6 +1,8 @@
 # Game of Life soup search farm
 
-Note: the code was written without LLMs, but this description was written with LLMs.
+This was built for the Cellula 4x4 Gene-Type BitLife Hackathon. I found the 1st, 2nd, and 3rd place submissions, but unfortunately missed the deadline for the contest by only a few minutes.
+
+Note: the code was written without LLMs, but the below description was written with LLMs.
 
 Searching for the largest soup in Conway's Game of Life under a set of constraints, run as a
 distributed CPU job across rented spot instances.
